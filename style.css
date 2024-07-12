@@ -1,0 +1,28 @@
+CSS
+body {
+  font-family: sans-serif;
+}
+
+#search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#username {
+  padding: 10px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+#search-btn {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#profile-container {
+  border: 1px solid #ddd;
+  padding: 20px;
+}
