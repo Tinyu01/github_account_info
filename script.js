@@ -31,11 +31,12 @@ function displayProfile(data) {
     <img src="${data.avatar_url}" alt="${data.login}'s avatar">
     <h2>${data.name || data.login}</h2>
     <p>Username: ${data.login}</p>
-    <p>Bio: ${data.bio || 'No bio provided.'}</p>
+    <p>Bio: ${data.bio ?? 'No bio provided.'}</p>
     <p>Public Repos: ${data.public_repos}</p>
     <p>Followers: ${data.followers}</p>
     <p>Account Created: ${new Date(data.created_at).toLocaleDateString()}</p>
     <p>Last Login: ${new Date(data.updated_at).toLocaleString()}</p>
+
     <a href="${data.html_url}" target="_blank">View Profile</a>
   `;
 }
